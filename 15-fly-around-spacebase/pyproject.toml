@@ -1,0 +1,13 @@
+[project]
+name = "15"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "l01",
+    "pygame>=2.6.1",
+]
+
+[tool.uv.sources]
+l01 = { path = "../l01" }
