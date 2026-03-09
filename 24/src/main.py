@@ -1,7 +1,8 @@
 
 import pygame
-from l01 import *
-keys = global_vars.keys
+from funcs import init, pe
+from Image_Rect import Image_Rect
+IR = Image_Rect
 
 screen, clock = init(1760, 1024)
 
@@ -18,8 +19,8 @@ while True:
     pe()
 
     # process input
-    m.x += keys["right"] - keys["left"]
-    m.y += keys["down"] - keys["up"]
+    #m.x += keys["right"] - keys["left"]
+    #m.y += keys["down"] - keys["up"]
 
     # draw to fb
     fb.fill((14, 255, 255))
