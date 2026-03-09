@@ -33,7 +33,7 @@ while True:
     # process input
     proxy_x = player.x
     proxy_x += float(keys["right"] - keys["left"])
-    proxy_rect = player.rect
+    proxy_rect = player.rect.copy()
     proxy_rect.x = proxy_x
     if (proxy_rect.colliderect(rock.rect)):
         print("collided")
@@ -43,7 +43,7 @@ while True:
         player.x = proxy_x
     proxy_y = player.y
     proxy_y += float(keys["down"] - keys["up"])
-    proxy_rect = player.rect
+    proxy_rect = player.rect.copy()
     proxy_rect.y = proxy_y
     if (proxy_rect.colliderect(rock.rect)):
         print("collided")
