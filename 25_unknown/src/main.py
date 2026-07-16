@@ -6,7 +6,7 @@ from funcs import init, pe
 from Image_Rect import Image_Rect
 IR = Image_Rect
 
-screen, clock = init(1760, 1024)
+screen, clock = init(128, 128)
 
 class Player:
     def __init__(self, file_path: str, x: float, y: float):
